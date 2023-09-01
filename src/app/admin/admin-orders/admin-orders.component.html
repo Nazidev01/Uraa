@@ -15,7 +15,7 @@
       <td>{{ order.payload.doc.data().datePlaced | date}}</td>
       <td>
         <label id="d" *ngIf="order.payload.doc.data().status">Delivered</label>
-        <label id="notd" *ngIf="! order.payload.doc.data().status">Not Delivered</label>
+        <label id="notd" *ngIf="! order.payload.doc.data().status">Not </label>
       </td>
       <td>
         <a [routerLink]="['/orders-details/',order.payload.doc.id]">View</a>
